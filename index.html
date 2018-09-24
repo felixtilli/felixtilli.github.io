@@ -1,1 +1,47 @@
-Hello World
+<html>
+   <head>
+      <title>svensk.design</title>
+      <style>
+         body {
+             margin: 0;
+             overflow: hidden;
+         }
+      
+         .animated {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/52/August_Strindberg_-_Storm_in_the_Skerries._%22The_Flying_Dutchman%22_-_Google_Art_Project.jpg);
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+         }
+         
+         @-webkit-keyframes pulse {
+            0% { -webkit-transform: scale(1); }
+            50% { -webkit-transform: scale(1.1); }
+            100% { -webkit-transform: scale(1); }
+         }
+         
+         @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+         }
+         
+         .pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="animated pulse"></div>
+   </body>
+</html>
